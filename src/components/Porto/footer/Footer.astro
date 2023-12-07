@@ -1,0 +1,55 @@
+---
+import {footer} from "../../../../content.json";
+import ContactMe from "./ContactMe";
+---
+
+<footer class="pt-4 sm:pt-6 lg:pt-8 bg-[#232D39]">
+	<div class="pt-12 max-w-screen-2xl mx-auto">
+		<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+			<div class="grid gap-5 lg:grid-cols-2 lg:items-center">
+				<!-- logo - start -->
+				<div class="mb-4">
+					<a
+						href="/"
+						class="inline-flex mb-6 items-center gap-2 text-xl font-bold text-white md:text-2xl"
+						aria-label="logo"
+					>
+						<img
+							src={footer.logoUrl}
+							alt="logos"
+							class="h-auto w-7 translate-x-1 -translate-y-1"
+						/>
+
+						 io Rifaldi
+					</a>
+					<p class="mb-6 text-gray-200 sm:pr-8">{footer.text}</p>
+					<ContactMe />
+				</div>
+				<!-- logo - end -->
+				<p class="text-4xl font-bold mx-auto text-center max-w-xs my-10 lg:my-0 text-white">let's talk about our project</p>
+			</div>
+
+			<div class="border-t py-8 text-center text-sm text-gray-400 grid grid-flow-col items-center justify-around">
+				<div class="grid gap-4 grid-flow-col w-max">
+					{
+						footer.socialMedia.map((val) => (
+							<a
+								href={val.link}
+								target="_blank"
+								class="rounded-sm overflow-hidden "
+							>
+								<img
+									src={val.image}
+									alt={val.name}
+									class="w-5"
+								/>
+							</a>
+						))
+					}
+				</div>
+				<p class="text-white">{footer.copyright}</p>
+			</div>
+		</div>
+	</div>
+</footer>
+ ./Porto/footer/ContactMe

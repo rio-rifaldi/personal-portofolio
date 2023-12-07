@@ -1,0 +1,57 @@
+---
+import {Button} from "../../ui/button";
+import {experiences} from "../../../../content.json";
+---
+
+<section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+	<div class="px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-screen-lg">
+		<div class="">
+			<h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">{experiences.title}</h2>
+			<p class="max-w-xl mt-4 text-base leading-relaxed text-gray-600">{experiences.text}</p>
+		</div>
+
+		<ul class="max-w-xl mt-16 space-y-12">
+			{
+				experiences.content.map((val) => (
+					<li class="relative flex items-start">
+						<div
+							class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full"
+							aria-hidden="true"
+						/>
+
+						<div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+							<img
+								src={val.image}
+								alt={val.experience}
+								class="w-11"
+							/>
+						</div>
+						<div class="ml-6">
+							<h3 class="text-lg font-semibold text-black capitalize">{val.experience}</h3>
+							<p class="text-[.86rem] capitalize text-gray-500">{val.time}</p>
+							<p class="mt-4 text-base text-gray-600">{val.experienceDetail}</p>
+							<Button
+								variant={"outline"}
+								size={"sm"}
+								client:visible
+								className="bg-transparent mt-4  hover:bg-blue-600 hover:text-white"
+							>
+								<a
+									href={val.CTA}
+									target="_blank"
+								>
+									View More
+								</a>
+							</Button>
+						</div>
+					</li>
+				))
+			}
+
+			<li class="relative flex items-center">
+				<div class="left-[.66rem] absolute w-11 h-11 bg-white rounded-full shadow"></div>
+				<div class="left-[1.4rem] absolute w-5 h-5 bg-blue-500 rounded-full"></div>
+			</li>
+		</ul>
+	</div>
+</section>

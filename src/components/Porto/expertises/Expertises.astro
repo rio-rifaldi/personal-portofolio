@@ -1,0 +1,44 @@
+---
+import {Button} from "../../ui/button";
+
+import {skillSet} from "../../../../content.json";
+---
+
+<div class="bg-[#F8F9FD] my-5 py-9 sm:py-8 lg:py-12">
+	<div class="mx-auto sm:max-w-screen-sm lg:max-w-screen-xl px-4 lg:px-8">
+		<div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+			<div class="order-2 max-w-md w-full p-6 overflow-hidden rounded-lg bg-transparent sm:mx-auto md:h-max grid grid-cols-4 place-items-center gap-3">
+				{
+					skillSet.skills.map((val) => (
+						<a
+							target="_blank"
+							href={val.link}
+							class="p-[1rem] shadow-lg w-max rounded-md bg-white"
+						>
+							<img
+								src={val.uri}
+								alt={val.name}
+								class={"w-[2rem]"}
+							/>
+						</a>
+					))
+				}
+			</div>
+
+			<div class="order-1 md:pt-8">
+				<p class="text-center font-bold text-indigo-500 md:text-left">{skillSet.tagline}</p>
+
+				<h1 class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left capitalize">{skillSet.title}</h1>
+
+				<p class="mb-6 text-gray-500 text-center md:text-left sm:text-lg md:mb-5">{skillSet.subTitle}</p>
+				<Button
+					client:visible
+					className="hidden lg:block"
+					size={"sm"}
+				>
+					view more
+				</Button>
+			</div>
+		</div>
+	</div>
+</div>

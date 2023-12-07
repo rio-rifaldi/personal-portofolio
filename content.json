@@ -1,0 +1,192 @@
+{
+	"Hero": {
+		"logos": "./public/logos.svg",
+		"navbar": [
+			{"title": "home", "path": "#home"},
+			{"title": "about", "path": "#about"},
+			{"title": "services", "path": "#services"},
+			{"title": "product", "path": "#product"},
+			{"title": "contact", "path": "#contact"}
+		],
+		"content": {
+			"hello": "Hello There 👋",
+			"header": "I'm Rio Rifaldi A Web Developer And UI/UX",
+			"subHeader": "hi, im web developer and UI/UX designer from indonesia. i help client for making responsive website and good design",
+			"CTA": {
+				"downloadCV": "",
+				"view-more": "#about"
+			},
+			"heroImage": {
+				"myPhoto": "./public/profesional-man-crop.svg",
+				"figma": "./public/figma.svg",
+				"next": "./public/next-js.svg",
+				"typescript": "./public/typescript.svg",
+				"vite": "./public/vite.svg",
+				"trpc": "./public/trpc.svg"
+			}
+		}
+	},
+	"About": {
+		"myPhoto": "./public/profesional-man-crop.svg",
+		"content": {
+			"tagline": "about me",
+			"title": "exploring new experience with me",
+			"paragraftOne": "Hi! i’m Rio Rifaldi, i’m dedicated to learning and creating in the realms of website development and UI/UX design. I believe that every line of code and every design element should contribute to a harmonious and intuitive user journey. it’s sounds interisting for me.",
+			"paragraftTwo": "I able to create website and responsive design for user, develop APIs and strive to deliver high-quality User Experience. I'm always excited to embrace new design challenges, opportunities expand my skills. and push the boundaries of creativity.",
+			"name": "rio rifaldi",
+			"email": "riorifaldi2004@gmail.com",
+			"location": "Central Java, Indonesia"
+		},
+		"CTA": "#services",
+		"socialMedia": [
+			{"name": "instagram", "image": "./public/instagram.svg", "link": "https://www.instagram.com/riorifaldi2004"},
+			{"name": "X", "image": "./public/twitter.svg", "link": "https://twitter.com/riorifaldi2004"},
+			{"name": "github", "image": "./public/github.svg", "link": "https://github.com/rio-rifaldi"},
+			{"name": "dribbble", "image": "./public/dribbble.svg", "link": "https://dribbble.com/riorifaldi"},
+			{"name": "linkedin", "image": "./public/linkedin.svg", "link": "https://www.linkedin.com/in/rio-rifaldi-4979991b9/"}
+		]
+	},
+	"skillSet": {
+		"tagline": "skill set",
+		"title": "my competitive expertises",
+		"subTitle": "I have learned some skill to expand opportunities and new challenges from users",
+		"skills": [
+			{
+				"name": "nextjs",
+				"uri": "./public/next-js.svg",
+				"link": "https://nextjs.org/"
+			},
+			{
+				"name": "html",
+				"uri": "./public/html.svg",
+				"link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+			},
+			{
+				"name": "css",
+				"uri": "./public/css.svg",
+				"link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+			},
+			{
+				"name": "javascript",
+				"uri": "./public/javascript.svg",
+				"link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+			},
+			{
+				"name": "tailwind",
+				"uri": "./public/tailwindcss.svg",
+				"link": "https://tailwindcss.com/"
+			},
+			{
+				"name": "bootstrap",
+				"uri": "./public/boostrap.svg",
+				"link": "https://getbootstrap.com/"
+			},
+			{
+				"name": "figma",
+				"uri": "./public/figma.svg",
+				"link": "https://www.figma.com/"
+			},
+			{
+				"name": "nodejs",
+				"uri": "./public/nodejs.svg",
+				"link": "https://nodejs.org/en"
+			},
+			{
+				"name": "postgresql",
+				"uri": "./public/postgresql.svg",
+				"link": "https://www.postgresql.org/"
+			},
+			{
+				"name": "prisma",
+				"uri": "./public/prisma.svg",
+				"link": "https://www.prisma.io/"
+			},
+			{
+				"name": "shadcn-ui",
+				"uri": "./public/shadcn-ui.png",
+				"link": "https://ui.shadcn.com/"
+			},
+			{
+				"name": "typescript",
+				"uri": "./public/typescript.svg",
+				"link": "https://www.typescriptlang.org/"
+			}
+		]
+	},
+	"services": {
+		"title": "Awesome services for you",
+		"content": [
+			{
+				"title": "web development",
+				"text": "UI slicing, create website on difference size, performance optimization",
+				"imageUri": "./public/web-development.svg",
+				"CTA": "https://brainstation.io/career-guides/what-is-web-development"
+			},
+
+			{
+				"title": "UI/UX",
+				"text": "in order to make user statisfied, I provide a modern UI and strive to deliver high-quality User Experience",
+				"imageUri": "./public/ui:ux.svg",
+				"CTA": "https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/"
+			},
+			{
+				"title": "web design",
+				"text": "create design in every size screen, make sure user have good quality at UI/UX",
+				"imageUri": "./public/web-design.svg",
+				"CTA": "https://www.interaction-design.org/literature/topics/web-design"
+			},
+			{
+				"title": "responsive design",
+				"text": "Designing seems straight forward on difference size, it might be break the UI. Here are responsive design coming",
+				"imageUri": "./public/responsive.svg",
+				"CTA": "https://en.wikipedia.org/wiki/Responsive_web_design"
+			}
+		]
+	},
+	"experiences": {
+		"title": "Experiences",
+		"text": "I have gained valuable by actively contributing to the growth of educational at starup and interning. i also freelancing to get more opportunities as web developer & UI/UX",
+		"content": [
+			{
+				"image": "./public/freelancer.svg",
+				"experience": "Freelance Web Deleveloper And UI/UX",
+				"time": "June 2023 - Present",
+				"experienceDetail": "As a freelancer at Freelancer.com, I've had the privilege of collaborating with a diverse range of clients to bring their digital visions to life. i have Responsibility to developed website and good UI/UX for user and understanding their unique requirements",
+				"CTA": "https://www.linkedin.com/in/rio-rifaldi-4979991b9/"
+			}
+		]
+	},
+	"portofolio": {
+		"title": "portofolio",
+		"content": {
+			"name": "",
+			"image": "",
+			"link": ""
+		}
+	},
+	"blog": {
+		"title": "blog",
+		"content": [
+			{
+				"title": "",
+				"previewText": "",
+				"image": "",
+				"author": "",
+				"blogDate": "",
+				"link": ""
+			}
+		]
+	},
+	"footer": {
+		"logoUrl": "./public/logos.svg",
+		"text": "if you isterested, let's talk about our project. don't hestitate to contact me",
+		"copyright": "ⓒ2023 - riorifaldi",
+		"socialMedia": [
+			{"name": "instagram", "image": "./public/instagram.svg", "link": "https://www.instagram.com/riorifaldi2004"},
+			{"name": "X", "image": "./public/twitter.svg", "link": "https://twitter.com/riorifaldi2004"},
+			{"name": "github", "image": "./public/github.svg", "link": "https://github.com/rio-rifaldi"},
+			{"name": "dribbble", "image": "./public/dribbble.svg", "link": "https://dribbble.com/riorifaldi"},
+			{"name": "linkedin", "image": "./public/linkedin.svg", "link": "https://www.linkedin.com/in/rio-rifaldi-4979991b9/"}
+		]
+	}
+}

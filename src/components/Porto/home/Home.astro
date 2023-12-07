@@ -1,0 +1,68 @@
+---
+import Navbar from "./Navbar";
+
+import {Hero} from "../../../../content.json";
+import ButtonHome from "./ButtonHome";
+---
+
+<div
+	id="home"
+	class="h-screen lg:h-[70vh] bg-home relative z-10"
+>
+	<Navbar client:only />
+	<div class="w-[50%] lg:w-[20%] absolute -z-10 top-0 right-0 h-full bg-home-blue justify-center items-center"></div>
+
+	<div class="relative z-10 h-full flex flex-col mx-5 lg:flex-row lg:justify-around lg:items-end">
+		<div class="text-center font-Hanken self-start sm:mx-auto sm:max-w-md lg:text-left lg:max-w-xl lg:mt-12 lg:mx-0">
+			<h1 class="capitalize mb-3 [font-size:_clamp(0.875rem,0.2676rem_+_2.5915vw,2.6rem)]">{Hero.content.hello}</h1>
+			<p class="[font-size:_clamp(1.98rem,1.4800rem_+_2.1333vw,3.4rem)] leading-tight capitalize font-semibold">{Hero.content.header}</p>
+			<p class="text-slate-400 mt-3 [font-size:_clamp(0.75rem,0.6046rem_+_0.6205vw,1.163rem)] sm:max-w-sm sm:mx-auto lg:max-w-none">{Hero.content.subHeader}</p>
+
+			<div class="mt-11 flex gap-4 justify-center scale-90 lg:justify-start lg:scale-100">
+				<ButtonHome client:only />
+			</div>
+		</div>
+		<div class="relative h-full border-green-700 mt-4 max-w-sm sm:translate-x-1/2 sm:-translate-x-1/2 lg:translate-x-0 lg:-translate-x0 lg:h-[60%] lg:m-0 lg:w-full">
+			<img
+				src={Hero.content.heroImage.myPhoto}
+				alt={"profesional man"}
+				class={"w-[57%] sm:w-[80%] lg:w-[29.89rem] absolute  bottom-[calc(0px_+_5rem)] right-0 left-0 mx-auto"}
+			/>
+			<div class="p-[0.30rem] shadow-lg w-max rounded-md absolute bottom-[10.422rem] right-[0.291rem] sm:-right-8 bg-white">
+				<img
+					src={Hero.content.heroImage.figma}
+					alt={"figma"}
+					class={"w-[1.663rem] h-[1.663rem] sm:w-[2.3rem] sm:h-max"}
+				/>
+			</div>
+			<div class="p-[0.30rem] shadow-lg w-max rounded-md absolute left-5 bottom-[9.5rem] sm:-left-12 bg-white">
+				<img
+					src={Hero.content.heroImage.next}
+					alt={"next js"}
+					class={"w-[1.8rem] sm:w-[2rem]"}
+				/>
+			</div>
+			<div class="p-[0.30rem] shadow-lg w-max rounded-md absolute left-[2rem] bottom-[19.688rem] sm:-left-4 bg-white">
+				<img
+					src={Hero.content.heroImage.trpc}
+					alt={"trpc"}
+					class={"w-[1.6rem] sm:w-[2.5rem]"}
+				/>
+			</div>
+			<div class="p-[0.50rem] shadow-lg w-max rounded-md absolute right-[1rem] bottom-[20.688rem] sm:bottom-[29.688rem] bg-white">
+				<img
+					src={Hero.content.heroImage.typescript}
+					alt={"typescript"}
+					class={"w-[2rem]"}
+				/>
+			</div>
+			<div class="p-[0.30rem] shadow-lg w-max rounded-md absolute right-[3.45rem] bottom-[16.313rem] sm:bottom-[19rem] bg-white">
+				<img
+					src={Hero.content.heroImage.vite}
+					alt={"vite"}
+					class={"w-[1.4rem] sm:w-[1.8rem]"}
+				/>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,40 @@
+---
+import {services} from "../../../../content.json";
+---
+
+<div class="bg-white max-w-screen-lg mx-auto py-6 sm:py-8 lg:py-12">
+	<div class="mx-auto max-w-screen-xl px-4 md:px-8">
+		<!-- text - start -->
+		<div class="mb-10 md:mb-16">
+			<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">{services.title}</h2>
+		</div>
+		<!-- text - end -->
+
+		<div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-2 xl:gap-16">
+			{
+				services.content.map((val) => (
+					<div class="flex gap-4 md:gap-6">
+						<div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-20 md:w-20 md:rounded-xl">
+							<img
+								class="w-14 bg-transparent"
+								src={val.imageUri}
+								alt={val.title}
+							/>
+						</div>
+
+						<div>
+							<h3 class="mb-2 text-lg font-semibold md:text-xl capitalize">{val.title}</h3>
+							<p class="mb-2 text-gray-500">{val.text}</p>
+							<a
+								href={val.CTA}
+								class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+							>
+								More
+							</a>
+						</div>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</div>

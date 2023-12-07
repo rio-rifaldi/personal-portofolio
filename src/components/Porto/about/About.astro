@@ -1,0 +1,75 @@
+---
+import {Button} from "../../ui/button";
+
+import {About as about} from "../../../../content.json";
+---
+
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+	<div class="mx-auto sm:max-w-screen-sm lg:max-w-screen-xl px-4 lg:px-8">
+		<div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+			<div class="max-w-md lg:max-w-sm lg:w-full pt-6 overflow-hidden rounded-lg bg-gray-100 sm:mx-auto shadow-lg md:h-max">
+				<img
+					src={about.myPhoto}
+					loading="lazy"
+					alt="Photo by Martin Sanchez"
+					class="w-[60%] lg:w-[90%] mx-auto"
+				/>
+			</div>
+
+			<div class="md:pt-8">
+				<p class="text-center font-bold text-indigo-500 md:text-left capitalize">{about.content.tagline}</p>
+
+				<h1 class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left capitalize">{about.content.title}</h1>
+
+				<p class="mb-6 text-gray-500 sm:text-lg md:mb-5">
+					{about.content.paragraftOne}<br /><br />
+
+					{about.content.paragraftTwo}
+				</p>
+
+				<div class="[&>p]:text-gray-500 capitalize grid sm:grid-cols-2 gap-2 text-[.94rem]">
+					<div class="flex gap-2">
+						<label class="font-medium">name :</label>
+						<p class="text-gray-500">rio rifaldi</p>
+					</div>
+					<div class="flex gap-2">
+						<label class="font-medium">email :</label>
+						<p class="lowercase text-gray-500">riorifaldi2004@gmail.com</p>
+					</div>
+					<div class="flex gap-2">
+						<label class="font-medium">location :</label>
+						<p class="text-gray-500">Central java, Indonesia</p>
+					</div>
+				</div>
+				<div class="text-[0.94rem] grid grid-cols-2 sm:grid-cols-3 items-center mt-8">
+					<Button
+						client:visible
+						className=" w-max "
+						size={"sm"}
+					>
+						<a href={about.CTA}>view more</a>
+					</Button>
+					<div class="w-7 sm:w-16 h-1 rounded-full bg-slate-700 hidden sm:block"></div>
+
+					<div class="flex gap-4">
+						{
+							about.socialMedia.map((val) => (
+								<a
+									href={val.link}
+									target="_blank"
+									class="rounded-sm overflow-hidden grayscale hover:grayscale-0 transition-colors"
+								>
+									<img
+										src={val.image}
+										alt={val.name}
+										class="w-5 sm:w-6"
+									/>
+								</a>
+							))
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
