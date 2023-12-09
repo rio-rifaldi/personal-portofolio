@@ -10,8 +10,8 @@
 		],
 		"content": {
 			"hello": "Hello There 👋",
-			"header": "I'm Rio Rifaldi A Web Developer And UI/UX",
-			"subHeader": "hi, im web developer and UI/UX designer from indonesia. i help client for making responsive website and good design",
+			"header": "I'm Rio Rifaldi A front-end Web Developer And UI/UX",
+			"subHeader": "hi, im front-end web developer and UI/UX designer from indonesia. i help client for making responsive website and good design",
 			"CTA": {
 				"downloadCV": "",
 				"view-more": "#about"
@@ -34,7 +34,7 @@
 			"tagline": "about me",
 			"title": "exploring new experience with me",
 			"paragraftOne": "Hi! i’m Rio Rifaldi, i’m dedicated to learning and creating in the realms of website development and UI/UX design. I believe that every line of code and every design element should contribute to a harmonious and intuitive user journey. it’s sounds interisting for me.",
-			"paragraftTwo": "I able to create website and responsive design for user, develop APIs and strive to deliver high-quality User Experience. I'm always excited to embrace new design challenges, opportunities expand my skills. and push the boundaries of creativity.",
+			"paragraftTwo": "I able to create website and responsive design for user, consume APIs and strive to deliver high-quality User Experience. I'm always excited to embrace new design challenges, opportunities expand my skills. and push the boundaries of creativity.",
 			"name": "rio rifaldi",
 			"email": "riorifaldi2004@gmail.com",
 			"location": "Central Java, Indonesia"
