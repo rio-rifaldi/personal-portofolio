@@ -4,6 +4,7 @@ import {useRef, useState} from "react";
 import {useClickAway} from "react-use";
 
 import {Hero} from "../../../../content.json";
+import {Button} from "@/components/ui/button";
 
 type Props = {};
 
@@ -44,7 +45,10 @@ function Navbar({}: Props) {
 						</>
 					))}
 				</ul>
-				<button className="bg-blue-600 hover:bg-blue-700 text-white font-Hanken text-base py-2 px-4 rounded">Get in touch</button>
+				<Button>
+					{" "}
+					<a href="#contact">Get in touch</a>{" "}
+				</Button>
 			</div>
 			<div className="lg:hidden">
 				<div className="relative z-30">

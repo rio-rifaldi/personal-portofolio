@@ -11,7 +11,8 @@ function ButtonHome({}: Props) {
 				className={`capitalize text-xs sm:text-base`}
 				size={islarge ? "lg" : "sm"}
 			>
-				download CV
+				<a href="#">download CV</a>
+
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="22"
@@ -39,7 +40,7 @@ function ButtonHome({}: Props) {
 				variant={"link"}
 				size={islarge ? "lg" : "sm"}
 			>
-				view more
+				<a href="#about">view more</a>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="22"

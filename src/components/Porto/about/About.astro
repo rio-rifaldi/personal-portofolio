@@ -4,17 +4,20 @@ import {Button} from "../../ui/button";
 import {About as about} from "../../../../content.json";
 ---
 
-<div class="bg-white py-6 sm:py-8 lg:py-12">
+<section
+	class="bg-white py-6 sm:py-8 lg:py-12"
+	id="about"
+>
 	<div class="mx-auto sm:max-w-screen-sm lg:max-w-screen-xl px-4 lg:px-8">
 		<div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-			<div class="max-w-md lg:max-w-sm lg:w-full pt-6 overflow-hidden rounded-lg bg-gray-100 sm:mx-auto shadow-lg md:h-max">
-				<img
-					src={about.myPhoto}
-					loading="lazy"
-					alt="Photo by Martin Sanchez"
-					class="w-[60%] lg:w-[90%] mx-auto"
-				/>
-			</div>
+			<!-- <div class="max-w-sm overflow-hidden rounded-lg sm:mx-auto shadow-lg md:h-max"> -->
+			<img
+				src={about.myPhoto}
+				loading="lazy"
+				alt="Photo by Martin Sanchez"
+				class="w-[60%] lg:max-w-md mx-auto rounded-lg sm:rounded-xl shadow-lg"
+			/>
+			<!-- </div> -->
 
 			<div class="md:pt-8">
 				<p class="text-center font-bold text-indigo-500 md:text-left capitalize">{about.content.tagline}</p>
@@ -72,4 +75,4 @@ import {About as about} from "../../../../content.json";
 			</div>
 		</div>
 	</div>
-</div>
+</section>

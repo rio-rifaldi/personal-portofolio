@@ -1,11 +1,11 @@
 {
 	"Hero": {
-		"logos": "./public/logos.svg",
+		"logos": "/logos.svg",
 		"navbar": [
 			{"title": "home", "path": "#home"},
 			{"title": "about", "path": "#about"},
 			{"title": "services", "path": "#services"},
-			{"title": "product", "path": "#product"},
+			{"title": "product", "path": "#portofolio"},
 			{"title": "contact", "path": "#contact"}
 		],
 		"content": {
@@ -17,17 +17,19 @@
 				"view-more": "#about"
 			},
 			"heroImage": {
-				"myPhoto": "./public/profesional-man-crop.svg",
-				"figma": "./public/figma.svg",
-				"next": "./public/next-js.svg",
-				"typescript": "./public/typescript.svg",
-				"vite": "./public/vite.svg",
-				"trpc": "./public/trpc.svg"
+				"myPhoto": "/photo-profile-compress.svg",
+				"mainBlobs": "/main-blob.svg",
+				"secondBlobs": "/secondary-blob.svg",
+				"figma": "/figma.svg",
+				"next": "/next-js.svg",
+				"typescript": "/typescript.svg",
+				"vite": "/vite.svg",
+				"trpc": "/trpc.svg"
 			}
 		}
 	},
 	"About": {
-		"myPhoto": "./public/profesional-man-crop.svg",
+		"myPhoto": "/photo-filter.png",
 		"content": {
 			"tagline": "about me",
 			"title": "exploring new experience with me",
@@ -39,11 +41,11 @@
 		},
 		"CTA": "#services",
 		"socialMedia": [
-			{"name": "instagram", "image": "./public/instagram.svg", "link": "https://www.instagram.com/riorifaldi2004"},
-			{"name": "X", "image": "./public/twitter.svg", "link": "https://twitter.com/riorifaldi2004"},
-			{"name": "github", "image": "./public/github.svg", "link": "https://github.com/rio-rifaldi"},
-			{"name": "dribbble", "image": "./public/dribbble.svg", "link": "https://dribbble.com/riorifaldi"},
-			{"name": "linkedin", "image": "./public/linkedin.svg", "link": "https://www.linkedin.com/in/rio-rifaldi-4979991b9/"}
+			{"name": "instagram", "image": "/instagram.svg", "link": "https://www.instagram.com/riorifaldi2004"},
+			{"name": "X", "image": "/twitter.svg", "link": "https://twitter.com/riorifaldi2004"},
+			{"name": "github", "image": "/github.svg", "link": "https://github.com/rio-rifaldi"},
+			{"name": "dribbble", "image": "/dribbble.svg", "link": "https://dribbble.com/riorifaldi"},
+			{"name": "linkedin", "image": "/linkedin.svg", "link": "https://www.linkedin.com/in/rio-rifaldi-4979991b9/"}
 		]
 	},
 	"skillSet": {
@@ -53,62 +55,62 @@
 		"skills": [
 			{
 				"name": "nextjs",
-				"uri": "./public/next-js.svg",
+				"uri": "/next-js.svg",
 				"link": "https://nextjs.org/"
 			},
 			{
 				"name": "html",
-				"uri": "./public/html.svg",
+				"uri": "/html.svg",
 				"link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
 			},
 			{
 				"name": "css",
-				"uri": "./public/css.svg",
+				"uri": "/css.svg",
 				"link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
 			},
 			{
 				"name": "javascript",
-				"uri": "./public/javascript.svg",
+				"uri": "/javascript.svg",
 				"link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
 				"name": "tailwind",
-				"uri": "./public/tailwindcss.svg",
+				"uri": "/tailwindcss.svg",
 				"link": "https://tailwindcss.com/"
 			},
 			{
 				"name": "bootstrap",
-				"uri": "./public/boostrap.svg",
+				"uri": "/boostrap.svg",
 				"link": "https://getbootstrap.com/"
 			},
 			{
 				"name": "figma",
-				"uri": "./public/figma.svg",
+				"uri": "/figma.svg",
 				"link": "https://www.figma.com/"
 			},
 			{
 				"name": "nodejs",
-				"uri": "./public/nodejs.svg",
+				"uri": "/nodejs.svg",
 				"link": "https://nodejs.org/en"
 			},
 			{
 				"name": "postgresql",
-				"uri": "./public/postgresql.svg",
+				"uri": "/postgresql.svg",
 				"link": "https://www.postgresql.org/"
 			},
 			{
 				"name": "prisma",
-				"uri": "./public/prisma.svg",
+				"uri": "/prisma.svg",
 				"link": "https://www.prisma.io/"
 			},
 			{
 				"name": "shadcn-ui",
-				"uri": "./public/shadcn-ui.png",
+				"uri": "/shadcn-ui.png",
 				"link": "https://ui.shadcn.com/"
 			},
 			{
 				"name": "typescript",
-				"uri": "./public/typescript.svg",
+				"uri": "/typescript.svg",
 				"link": "https://www.typescriptlang.org/"
 			}
 		]
@@ -119,26 +121,26 @@
 			{
 				"title": "web development",
 				"text": "UI slicing, create website on difference size, performance optimization",
-				"imageUri": "./public/web-development.svg",
+				"imageUri": "/web-development.svg",
 				"CTA": "https://brainstation.io/career-guides/what-is-web-development"
 			},
 
 			{
 				"title": "UI/UX",
 				"text": "in order to make user statisfied, I provide a modern UI and strive to deliver high-quality User Experience",
-				"imageUri": "./public/ui:ux.svg",
+				"imageUri": "/ui:ux.svg",
 				"CTA": "https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/"
 			},
 			{
 				"title": "web design",
 				"text": "create design in every size screen, make sure user have good quality at UI/UX",
-				"imageUri": "./public/web-design.svg",
+				"imageUri": "/web-design.svg",
 				"CTA": "https://www.interaction-design.org/literature/topics/web-design"
 			},
 			{
 				"title": "responsive design",
 				"text": "Designing seems straight forward on difference size, it might be break the UI. Here are responsive design coming",
-				"imageUri": "./public/responsive.svg",
+				"imageUri": "/responsive.svg",
 				"CTA": "https://en.wikipedia.org/wiki/Responsive_web_design"
 			}
 		]
@@ -148,7 +150,7 @@
 		"text": "I have gained valuable by actively contributing to the growth of educational at starup and interning. i also freelancing to get more opportunities as web developer & UI/UX",
 		"content": [
 			{
-				"image": "./public/freelancer.svg",
+				"image": "/freelancer.svg",
 				"experience": "Freelance Web Deleveloper And UI/UX",
 				"time": "June 2023 - Present",
 				"experienceDetail": "As a freelancer at Freelancer.com, I've had the privilege of collaborating with a diverse range of clients to bring their digital visions to life. i have Responsibility to developed website and good UI/UX for user and understanding their unique requirements",
@@ -178,15 +180,15 @@
 		]
 	},
 	"footer": {
-		"logoUrl": "./public/logos.svg",
+		"logoUrl": "/logos.svg",
 		"text": "if you isterested, let's talk about our project. don't hestitate to contact me",
 		"copyright": "ⓒ2023 - riorifaldi",
 		"socialMedia": [
-			{"name": "instagram", "image": "./public/instagram.svg", "link": "https://www.instagram.com/riorifaldi2004"},
-			{"name": "X", "image": "./public/twitter.svg", "link": "https://twitter.com/riorifaldi2004"},
-			{"name": "github", "image": "./public/github.svg", "link": "https://github.com/rio-rifaldi"},
-			{"name": "dribbble", "image": "./public/dribbble.svg", "link": "https://dribbble.com/riorifaldi"},
-			{"name": "linkedin", "image": "./public/linkedin.svg", "link": "https://www.linkedin.com/in/rio-rifaldi-4979991b9/"}
+			{"name": "instagram", "image": "/instagram.svg", "link": "https://www.instagram.com/riorifaldi2004"},
+			{"name": "X", "image": "/twitter.svg", "link": "https://twitter.com/riorifaldi2004"},
+			{"name": "github", "image": "/github.svg", "link": "https://github.com/rio-rifaldi"},
+			{"name": "dribbble", "image": "/dribbble.svg", "link": "https://dribbble.com/riorifaldi"},
+			{"name": "linkedin", "image": "/linkedin.svg", "link": "https://www.linkedin.com/in/rio-rifaldi-4979991b9/"}
 		]
 	}
 }
